@@ -12,7 +12,7 @@ on:
 
 jobs:
   docker-build-deploy:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, ARM64]
 
     permissions:
       contents: read
