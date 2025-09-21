@@ -69,9 +69,7 @@ jobs:
 
   build-amd64:
     name: Build and Push AMD64
-    runs-on: [self-hosted, linux, x64]  # Adjust labels to match your runner's actual labels
-
-    needs: build-arm64
+    runs-on: [self-hosted, linux, x64]  # Adjust to match your runner's labels
 
     permissions:
       contents: read
